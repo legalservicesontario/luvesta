@@ -466,7 +466,41 @@
       </div>
     </div>
   </section>
+ <!-- LIVE DEMO SECTION -->
+  <section id="demo" class="py-20 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="section-title">Live AI Bot Demo</h2>
+      <p class="text-center text-gray-400 mb-8">Enter your brand name to simulate AI detection capabilities</p>
 
+      <div class="card border-2 border-blue-500">
+        <input 
+          id="brandInput"
+          type="text" 
+          placeholder="Enter your brand or executive name (example: Tesla, John Smith)"
+          class="w-full p-4 rounded-lg bg-gray-800 border border-gray-700 mb-4 text-white placeholder-gray-500"
+        />
+
+        <button 
+          onclick="runDemo()"
+          class="btn-primary w-full mb-6">
+          Scan for Threats
+        </button>
+
+        <div id="demoResults" class="text-left hidden">
+          <h4 class="font-semibold text-red-400 mb-3">🔴 Detected Potential Threats:</h4>
+          <ul class="space-y-2 text-gray-300 mb-6">
+            <li>⚠️ Fake LinkedIn profile with similar brand name</li>
+            <li>⚠️ Instagram account copying brand logo</li>
+            <li>⚠️ Twitter account impersonating official brand</li>
+            <li>⚠️ Facebook page pretending to represent company</li>
+            <li>⚠️ Website domain typosquatting your brand</li>
+          </ul>
+          <p class="text-green-400 font-semibold">✅ Deploy bot for full automated monitoring and takedown support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- AI SOLUTIONS SECTION -->
   <section id="ai-solutions" class="py-20 px-6">
     <div class="max-w-7xl mx-auto">
